@@ -7,6 +7,7 @@ function createWindow() {
   let mainWindowState = windowStateKeeper({
     defaultWidth: 800,
     defaultHeight: 600,
+    
   });
 
 
@@ -15,7 +16,7 @@ function createWindow() {
     'y': mainWindowState.y,
     'width': mainWindowState.width,
     'height': mainWindowState.height,
-    'backgroundColor': '#EFEFEF',
+
 
 
     

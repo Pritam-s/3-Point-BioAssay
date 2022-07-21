@@ -9,7 +9,11 @@
   font-family: Arial, Helvetica, sans-serif;
 }
 
-.splash {
+body {
+  background-color: #EFEFEF;
+}
+
+.height100 {
   height: 100vh;
 }
 
@@ -24,4 +28,17 @@
 
 .font-grey {
   color: #606060;
+}
+
+.bgblue {
+  background-color: #D9E8FE;
+  color: #569AFE;
+}
+
+.px-8 {
+  padding: 8rem;
+}
+
+.my-12 {
+  margin-top: 12rem;
 }/*# sourceMappingURL=style.css.map */

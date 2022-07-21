@@ -2,6 +2,8 @@ $bodyBgColor : #EFEFEF;
 $fontgrey : #606060;
 $btnOrange : #FF7F22;
 $btnOrangeHover : hsl(25, 100%, 46%);
+$bgColorblue : #D9E8FE;
+$tblue : #569AFE;
 
 
 *{
@@ -12,7 +14,11 @@ $btnOrangeHover : hsl(25, 100%, 46%);
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.splash{
+body{
+    background-color: $bodyBgColor;
+}
+
+.height100{
     height: 100vh;
 }
 
@@ -27,4 +33,18 @@ $btnOrangeHover : hsl(25, 100%, 46%);
 
 .font-grey{
     color: $fontgrey;
+}
+
+.bgblue{
+    background-color: $bgColorblue;
+    color: $tblue;
+}
+
+.px-8{
+    padding: 8rem;
+}
+
+
+.my-12{
+    margin-top: 12rem;
 }
