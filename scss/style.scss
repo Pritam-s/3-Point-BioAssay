@@ -4,6 +4,9 @@ $btnOrange : #FF7F22;
 $btnOrangeHover : hsl(25, 100%, 46%);
 $bgColorblue : #D9E8FE;
 $tblue : #569AFE;
+$tabActiveGray : #424242;
+$topBarText : #D9D9D9;
+
 
 
 *{
@@ -47,4 +50,29 @@ body{
 
 .my-12{
     margin-top: 12rem;
+}
+
+.active{
+    background-color: $tabActiveGray;
+}
+
+.mainIcon{
+    width: 4rem;
+    height: 4rem;
+}
+
+.topbar{
+    background-color: #606060;
+    color: $topBarText;
+    gap: 1rem;
+}
+
+.nav-pills .nav-link {
+    background: 0 0;
+    border: 0;
+    border-radius: 0;
+}
+
+.nav-pills .nav-link.active{
+    background-color: $tabActiveGray;
 }
