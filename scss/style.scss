@@ -1,0 +1,30 @@
+$bodyBgColor : #EFEFEF;
+$fontgrey : #606060;
+$btnOrange : #FF7F22;
+$btnOrangeHover : hsl(25, 100%, 46%);
+
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    user-select: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.splash{
+    height: 100vh;
+}
+
+.btn-orange{
+    background-color: $btnOrange;
+    color: #fff;
+    &:hover{
+        background-color: $btnOrangeHover;
+        color: #fff;
+    }
+}
+
+.font-grey{
+    color: $fontgrey;
+}

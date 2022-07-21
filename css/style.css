@@ -1,0 +1,27 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.splash {
+  height: 100vh;
+}
+
+.btn-orange {
+  background-color: #FF7F22;
+  color: #fff;
+}
+.btn-orange:hover {
+  background-color: hsl(25deg, 100%, 46%);
+  color: #fff;
+}
+
+.font-grey {
+  color: #606060;
+}/*# sourceMappingURL=style.css.map */

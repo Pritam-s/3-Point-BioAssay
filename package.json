@@ -1,0 +1,19 @@
+{
+  "name": "3-point-bioassay",
+  "version": "1.0.0",
+  "description": "An app to measure 3 point bioassay",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "watch": "nodemon --exec electron ."
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^19.0.8"
+  },
+  "dependencies": {
+    "electron-window-state": "^5.0.3",
+    "nodemon": "^2.0.19"
+  }
+}
