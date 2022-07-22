@@ -13,6 +13,7 @@
     "electron": "^19.0.8"
   },
   "dependencies": {
+    "@amcharts/amcharts5": "^5.2.13",
     "electron-window-state": "^5.0.3",
     "nodemon": "^2.0.19"
   }
