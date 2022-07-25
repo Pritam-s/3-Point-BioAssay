@@ -5,28 +5,42 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Experiment</title>
-    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css"> -->
+
+    <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
 
     <script src="js/amcharts5/index.js"></script>
     <script src="js/amcharts5/xy.js"></script>
     <script src="js/amcharts5/Animated.js"></script>
+    <script src="js/bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="js/dropdown.js"></script>
 
     <style>
       #chartdiv{
-        width: 100%;
+        width: 50%;
         height: 400px;
+        background-color: #fafafa;
       }
     </style>
   </head>
 
 <body>
+  <!-- Header -->
+  
     <div class="container-fluid d-flex flex-row align-items-center topbar py-3 px-4">
         <img class="mainIcon" src="images/1_MainImage.svg" alt="">
         <h4 class="m-0">3 Point Bioassay</h4>
-    </div>
+ 
+      </div>
+  <div class="container">
+    
+  </div>
 
-    <div class="d-flex flex-column flex-shrink-0 bg-secondary bg-gradient" style="width: 7.5rem;">
+    
+    <!-- Sidebar -->
+    <div class="d-flex flex-column flex-shrink-0 bg-secondary bg-gradient sidebar">
         <ul class="nav nav-pills nav-flush flex-column mb-auto text-center height100">
           <li class="nav-item link">
             <a href="#" class="nav-link py-3 active" aria-current="page" title="" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-original-title="Home">
@@ -43,8 +57,82 @@
         </ul>
       </div>
 
-      <div id="chartdiv">
-        <script src="js/experiment.js"></script>
-      </div>
+      <!-- Main Content -->
+      <div class="container d-flex flex-column main">
+        <h1>
+          Experiment - Bioassay of Histamine on the Guineapig Ileum
+        </h1>
+
+        <!-- Dose select Dropdown -->
+        <div class="container">
+          <h3>
+            Select dose quantity
+          </h3>
+
+          <form action="output.php" name="InputCacheCheck" method="post">          
+            <select class="form-select" aria-label="Default select example">
+              <option selected disabled>00μg</option>
+              <option value="1">2μg</option>
+              <option value="2">4μg</option>
+              <option value="3">8μg</option>
+              <option value="4">16μg</option>
+              <option value="5">32μg</option>
+              <option value="6">64μg</option>
+              <option value="7">128μg</option>
+              <option value="8">256μg</option>
+            </select>
+  
+              <input class="btn btn-orange" type="submit" value="Inject">
+
+              <input class="btn btn-secondary" type="reset" value="Clear">
+  
+          </form>
+          </div>
+        </div>
+
+
+        <div class="container d-flex flex-row justify-content-between">
+          <div id="chartdiv">
+            <script src="js/experiment.js"></script>
+          </div>
+  
+          <div class="record bgwhite">
+            <div>
+              <table class="table table-bordered">
+                <thead class="table-dark">
+                  <tr>
+                    <th scope="col">S.N</th>
+                    <th scope="col">Dose(μg)</th>
+                    <th scope="col">Response(cm)</th>
+                    <th scope="col">Log</th>
+                    <th scope="col">Response(%)</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">1</th>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">2</th>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">3</th>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+
 </body>
 </html>

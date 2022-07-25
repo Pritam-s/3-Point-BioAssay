@@ -9,7 +9,7 @@ $topBarText : #D9D9D9;
 
 
 
-*{
+* {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -17,51 +17,52 @@ $topBarText : #D9D9D9;
     font-family: Arial, Helvetica, sans-serif;
 }
 
-body{
+body {
     background-color: $bodyBgColor;
 }
 
-.height100{
+.height100 {
     height: 100vh;
 }
 
-.btn-orange{
+.btn-orange {
     background-color: $btnOrange;
     color: #fff;
-    &:hover{
+
+    &:hover {
         background-color: $btnOrangeHover;
         color: #fff;
     }
 }
 
-.font-grey{
+.font-grey {
     color: $fontgrey;
 }
 
-.bgblue{
+.bgblue {
     background-color: $bgColorblue;
     color: $tblue;
 }
 
-.px-8{
+.px-8 {
     padding: 8rem;
 }
 
 
-.my-12{
+.my-12 {
     margin-top: 12rem;
 }
 
-.active{
+.active {
     background-color: $tabActiveGray;
 }
 
-.mainIcon{
+.mainIcon {
     width: 4rem;
     height: 4rem;
 }
 
-.topbar{
+.topbar {
     background-color: #606060;
     color: $topBarText;
     gap: 1rem;
@@ -73,6 +74,29 @@ body{
     border-radius: 0;
 }
 
-.nav-pills .nav-link.active{
+.nav-pills .nav-link.active {
     background-color: $tabActiveGray;
+}
+
+.sidebar {
+    height: 100%;
+    position: fixed;
+    box-shadow: 0 2px 5px 0 rgb(0 0 0 / 5%), 0 2px 10px 0 rgb(0 0 0 / 5%);
+    width: 7rem;
+    z-index: 1;
+    overflow-x: 0;
+}
+
+.bgwhite{
+    background-color: #fff;
+}
+
+.main{
+    margin-left: 7rem;
+    padding: 15px 20px;
+}
+
+.form-select{
+    width: 15%;
+    display: inline-block;
 }

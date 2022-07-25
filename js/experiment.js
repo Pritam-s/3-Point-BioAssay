@@ -67,8 +67,8 @@
     
     series.columns.template.setAll({
       width: am5.percent(120),
-      fillOpacity: 0.9,
-      strokeOpacity: 0
+      fillOpacity: 0.1,
+      strokeOpacity: 1
     });
     // series.columns.template.adapters.add("fill", (fill, target) => {
     //   return chart.get("colors").getIndex(series.columns.indexOf(target));

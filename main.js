@@ -1,33 +1,22 @@
-const { app, BrowserWindow } = require('electron')
-const path = require('path')
-const windowStateKeeper = require('electron-window-state');
-let win;
+const {app, BrowserWindow} = require('electron');
 
 function createWindow() {
-  let mainWindowState = windowStateKeeper({
-    defaultWidth: 800,
-    defaultHeight: 600,
-    
-  });
-
-
-  win = new BrowserWindow({
-    'x': mainWindowState.x,
-    'y': mainWindowState.y,
-    'width': mainWindowState.width,
-    'height': mainWindowState.height,
-
-
-
-    
-    webPreferences: {
-      preload: path.join(__dirname, 'preload.js')
-    }
-  });
-
-  win.loadFile('index.html')
-  //   win.webContents.openDevTools() // open dev tools
-  mainWindowState.manage(win); // manage window state
+    // Create main window with some default setting.
+    const win = new BrowserWindow({
+        width: 1350,
+        height: 750,
+        minWidth: 1350,
+        minHeight: 750,
+        // icon: "app-icon.png",
+        resizable: true,
+        webPreferences: {
+            nodeIntegration: true,
+            devTools: true
+        }
+    });
+    win.loadFile("index.html");
+    win.setMenuBarVisibility(false);
 }
 
-app.on('ready', createWindow) // when the app is ready, create the window
+// Call the "createWindow" function when the app is ready to start.
+app.whenReady().then(createWindow);
